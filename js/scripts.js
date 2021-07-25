@@ -24,3 +24,17 @@ let pokemonList = [
     weight: 210,
   },
 ];
+
+/*writes the pokemon name and height to the DOM
+for (let i =0; i < pokemonList.length; i++){
+  document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height})  </p>`);
+} */
+
+//highlights Onix and only Onix as a big! pokemon
+for (let i =0; i < pokemonList.length; i++){
+  if (pokemonList[i].height > 8) {
+    document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
+  } else {
+    document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height})  </p>`);
+  }
+}
