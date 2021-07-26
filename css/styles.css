@@ -1,1 +1,14 @@
+/*
+colors used:
+background color-fad61d (yellow)
+*/
 
+body {
+  font-family: 'Ruslan Display', cursive;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 2;
+  background-color: #fad61d;
+  text-decoration-color: #000;
+  text-align: center;
+}
