@@ -30,11 +30,20 @@ for (let i =0; i < pokemonList.length; i++){
   document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height})  </p>`);
 } */
 
-//highlights Onix and only Onix as a big! pokemon
+/*highlights Onix and only Onix as a big! pokemon using a for loop
 for (let i =0; i < pokemonList.length; i++){
   if (pokemonList[i].height > 8) {
     document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height}) - Wow, that's big! </p>`);
   } else {
     document.write(`<p> ${pokemonList[i].name} (height: ${pokemonList[i].height})  </p>`);
   }
-}
+}*/
+
+
+pokemonList.forEach(function(pokemon) {
+  if (pokemon.height > 8) {
+    document.write(`<p> ${pokemon.name} (height: ${pokemon.height}) - Wow, that's big! </p>`);
+  } else {
+    document.write(`<p> ${pokemon.name} (height: ${pokemon.height})  </p>`);
+  }
+});
