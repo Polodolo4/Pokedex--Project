@@ -1,4 +1,4 @@
-(function() {
+let pokemonRepository = (function() {
   let pokemonList = [
     {
       name: 'Butterfree',
@@ -25,6 +25,15 @@
       weight: 210,
     },
   ];
+
+  return {
+   add: function(pokemon) {
+     pokemonList.push(pokemon);
+   },
+   getAll: function() {
+     return pokemonList;
+   }
+ };
 })();
 
 /*writes the pokemon name and height to the DOM
@@ -41,11 +50,11 @@ for (let i =0; i < pokemonList.length; i++){
   }
 }*/
 
-/*highlights Onix and only Onix as a big! pokemon using a forEach loop
-pokemonList.forEach(function(pokemon) {
+//highlights Onix and only Onix as a big! pokemon using a forEach loop
+pokemonRepository.getAll().forEach(function(pokemon) {
   if (pokemon.height > 8) {
     document.write(`<p> ${pokemon.name} (height: ${pokemon.height}) - Wow, that's big! </p>`);
   } else {
     document.write(`<p> ${pokemon.name} (height: ${pokemon.height})  </p>`);
   }
-});*/
+});
