@@ -62,7 +62,6 @@ function loadDetails(item) {
     add: add,
     getAll: getAll,
     addListItem:addListItem,
-    loadList: loadList,
     loadDetails: loadDetails,
     loadList:loadList,
     showDetails: showDetails

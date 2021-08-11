@@ -58,7 +58,6 @@ function loadDetails(item) {
       return pokemonList;
     },
     addListItem: addListItem,
-    loadList: loadList,
     loadDetails: loadDetails,
     loadList: loadList,
     showDetails: showDetails
